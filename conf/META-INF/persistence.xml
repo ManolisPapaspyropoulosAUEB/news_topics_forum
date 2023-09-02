@@ -1,0 +1,38 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+                           version="2.1">
+<persistence-unit name="defaultPersistenceUnit" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+    <non-jta-data-source>DefaultDS</non-jta-data-source>
+    <class>models.security.SecurityAuditLogsEntity</class>
+    <class>models.security.SecurityUsersEntity</class>
+    <class>models.security.SecurityActionsEntity</class>
+    <class>models.security.SecurityBlockedOriginsEntity</class>
+    <class>models.security.SecurityGroupRolesAppEntity</class>
+    <class>models.security.SecurityGroupRolesAppRolesEntity</class>
+    <class>models.security.SecurityPasswordPoliciesEntity</class>
+    <class>models.security.SecurityPwdHistoryEntity</class>
+    <class>models.security.SecurityRoleActionsEntity</class>
+    <class>models.security.SecurityRolesEntity</class>
+    <class>models.security.SecurityRolesSystemsEntity</class>
+    <class>models.security.SecuritySystemsEntity</class>
+    <class>models.security.SecurityUserRolesEntity</class>
+    <class>models.notifications.UsersNotifOrgsEntity</class>
+    <class>models.notifications.UsersNotifUsersEntity</class>
+    <class>models.notifications.UsersNotificationsEntity</class>
+    <class>models.core_data.CoreSubjectsEntity</class>
+    <class>models.core_data.NewsEntity</class>
+    <class>models.news_package.NewsEntity</class>
+    <class>models.news_package.NewsCommentsEntity</class>
+    <class>models.news_package.NewsTopicsEntity</class>
+
+    <properties>
+        <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+        <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/assigment_forum"/>
+        <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="hibernate.connection.useUnicode" value="true"/>
+        <property name="hibernate.connection.characterEncoding" value="utf8_general_ci"/>
+    </properties>
+</persistence-unit>
+</persistence>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.bouncycastle:bcmail-jdk14:1.38:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/org/bouncycastle/bcmail-jdk14/1.38/bcmail-jdk14-1.38-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

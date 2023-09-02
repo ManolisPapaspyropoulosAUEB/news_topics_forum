@@ -1,0 +1,4 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/project/"), "java-play-2-8-build")...
+[debug] Done updating ProjectRef(uri("file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/project/"), "java-play-2-8-build")
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.

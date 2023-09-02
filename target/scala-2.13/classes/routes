@@ -1,0 +1,58 @@
+
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file              controllers.Assets.versioned(path="/public", file: Asset)
+
+# An example controller showing a sample home page
+GET         /                          controllers.HomeController.index(request: Request)
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file              controllers.Assets.versioned(path="/public", file: Asset)
+GET         /app/*file                 controllers.WebAppAssets.at(path="webapp/", file: String)
+
+######################################---SECURITY---######################################
+
+#UsersControllers
+POST        /addUser                   controllers.security.UsersControllers.addUser(req: Request)
+POST        /updateUser                controllers.security.UsersControllers.updateUser(req: Request)
+POST        /deleteUser                controllers.security.UsersControllers.deleteUser(req: Request)
+POST        /getUsers                  controllers.security.UsersControllers.getUsers(req: Request)
+POST        /login                     controllers.security.UsersControllers.login(req: Request)
+POST        /logout                    controllers.security.UsersControllers.logout(req: Request)
+
+#RolesController
+POST        /addRole                   controllers.security.RolesController.addRole(req: Request)
+POST        /updateRole                controllers.security.RolesController.updateRole(req: Request)
+POST        /deleteRole                controllers.security.RolesController.deleteRole(req: Request)
+POST        /getRoles                  controllers.security.RolesController.getRoles(req: Request)
+
+#CoreSubjectsController
+POST        /addCoreSubject            controllers.coreData.CoreSubjectsController.addCoreSubject(req: Request)
+POST        /updateCoreSubject         controllers.coreData.CoreSubjectsController.updateCoreSubject(req: Request)
+POST        /approveCoreSubject        controllers.coreData.CoreSubjectsController.approveCoreSubject(req: Request)
+POST        /deleteCoreSubject         controllers.coreData.CoreSubjectsController.deleteCoreSubject(req: Request)
+POST        /getCoreSubjects           controllers.coreData.CoreSubjectsController.getCoreSubjects(req: Request)
+POST        /rejectCoreSubject         controllers.coreData.CoreSubjectsController.rejectCoreSubject(req: Request)
+
+#NewsController
+POST        /addNew                    controllers.news.NewsController.addNew(req: Request)
+POST        /updateNew                 controllers.news.NewsController.updateNew(req: Request)
+POST        /getNews                   controllers.news.NewsController.getNews(req: Request)
+POST        /deleteNew                 controllers.news.NewsController.deleteNew(req: Request)
+POST        /submitNew                 controllers.news.NewsController.submitNew(req: Request)
+POST        /rejectNew                 controllers.news.NewsController.rejectNew(req: Request)
+POST        /approvalNew               controllers.news.NewsController.approvalNew(req: Request)
+POST        /publishNew                controllers.news.NewsController.publishNew(req: Request)
+
+
+#NewsCommentsController
+POST        /addNewComment             controllers.news.NewsCommentsController.addNewComment(req: Request)
+POST        /updateNewComment          controllers.news.NewsCommentsController.updateNewComment(req: Request)
+POST        /rejectNewComment          controllers.news.NewsCommentsController.rejectNewComment(req: Request)
+POST        /approveNewComment         controllers.news.NewsCommentsController.approveNewComment(req: Request)
+POST        /getNewComments            controllers.news.NewsCommentsController.getNewComments(req: Request)

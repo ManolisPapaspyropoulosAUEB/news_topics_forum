@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: net.sf.jasperreports:jasperreports:6.16.0:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/net/sf/jasperreports/jasperreports/6.16.0/jasperreports-6.16.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/net/sf/jasperreports/jasperreports/6.16.0/jasperreports-6.16.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
