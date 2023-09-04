@@ -91,11 +91,22 @@ public class CoreSubjectsController extends Application {
     @BodyParser.Of(BodyParser.Json.class)
     public Result updateCoreSubject(final Http.Request request) throws IOException {
         JsonNode json = request.body().asJson();
+
         if (json == null) {
             return badRequest("Expecting Json data");
         } else {
             try {
+
                 ObjectNode result = Json.newObject();
+                String userId = request.session().get("userId").orElse(null);
+                String roleId = request.session().get("roleId").orElse(null);
+                boolean canModify = checkIfCanModifyRecord(userId,roleId,"core_subjects" , json.findPath("id").asText() );
+                if(!canModify){
+                    result.put("status", "error");
+                    result.put("message", "Δεν έχετε δικαίωμα για την συγκεκριμένη ενέργεια");
+                    return ok(result);
+                }
+
                 CompletableFuture<JsonNode> addFuture = CompletableFuture.supplyAsync(() -> {
                             return jpaApi.withTransaction(entityManager -> {
                                 ObjectNode update_result = Json.newObject();
@@ -112,7 +123,7 @@ public class CoreSubjectsController extends Application {
                                 CoreSubjectsEntity subjectsEntity = entityManager.find(CoreSubjectsEntity.class,id);
                                 if(subjectsEntity.getStatus().equalsIgnoreCase("Δημιουργημένο")){
                                     subjectsEntity.setTitle(title);
-                                    subjectsEntity.setCreationDate(new Date());
+                                    subjectsEntity.setUpdateDate(new Date());
                                     subjectsEntity.setParentId(parentId!=0?parentId:1);
                                     entityManager.merge(subjectsEntity);
                                     update_result.put("status", "success");
@@ -228,13 +239,22 @@ public class CoreSubjectsController extends Application {
     @SuppressWarnings({"Duplicates", "unchecked"})
     @BodyParser.Of(BodyParser.Json.class)
     public Result deleteCoreSubject(final Http.Request request) throws IOException {
-        String userId = request.session().get("userId").orElse(null);
         JsonNode json = request.body().asJson();
         if (json == null) {
             return badRequest("Expecting Json data");
         } else {
             try {
+
                 ObjectNode result = Json.newObject();
+                String userId = request.session().get("userId").orElse(null);
+                String roleId = request.session().get("roleId").orElse(null);
+                boolean canModify = checkIfCanModifyRecord(userId,roleId,"core_subjects" , json.findPath("id").asText() );
+                if(!canModify){
+                    result.put("status", "error");
+                    result.put("message", "Δεν έχετε δικαίωμα για την συγκεκριμένη ενέργεια");
+                    return ok(result);
+                }
+
                 CompletableFuture<JsonNode> addFuture = CompletableFuture.supplyAsync(() -> {
                             return jpaApi.withTransaction(entityManager -> {
                                 ObjectNode update_result = Json.newObject();
@@ -278,11 +298,15 @@ public class CoreSubjectsController extends Application {
                                     String orderCol = json.findPath("orderCol").asText();
                                     String descAsc = json.findPath("descAsc").asText();
                                     String title = json.findPath("title").asText();
+                                    String id = json.findPath("id").asText();
                                     String start = json.findPath("start").asText();
                                     String limit = json.findPath("limit").asText();
                                     String sqlSub = "select * from core_subjects sub where 1=1 ";
                                     if (!title.equalsIgnoreCase("") && title != null) {
-                                        sqlSub += " and (rols.title) like '%" + title + "%'";
+                                        sqlSub += " and (sub.title) like '%" + title + "%'";
+                                    }
+                                    if (!id.equalsIgnoreCase("") && id != null) {
+                                        sqlSub += " and (sub.id) = " + id ;
                                     }
                                     if (!orderCol.equalsIgnoreCase("") && orderCol != null) {
                                         sqlSub += " order by " + orderCol + " " + descAsc;
@@ -299,14 +323,16 @@ public class CoreSubjectsController extends Application {
                                             sqlSub, CoreSubjectsEntity.class).getResultList();
                                     for (CoreSubjectsEntity j : orgsList) {
                                         HashMap<String, Object> sHmpam = new HashMap<String, Object>();
-                                        sHmpam.put("id", j.getId());
-                                        sHmpam.put("title", j.getTitle());
-                                        sHmpam.put("status", j.getStatus());
-                                        sHmpam.put("parentId", j.getParentId());
-                                        sHmpam.put("createdBy", j.getCreatedBy());
-                                        sHmpam.put("approvedBy", j.getApprovedBy());
-                                        sHmpam.put("creationDate", j.getCreationDate());
-                                        sHmpam.put("approvedDate", j.getApprovedDate());
+                                        sHmpam = j.getTopicObject(j,entityManager);
+                                        List<HashMap<String, Object>> coreSubList = new ArrayList<HashMap<String, Object>>();
+                                        String sqlChilds = "select * from core_subjects where parent_id="+j.getId();
+                                        List<CoreSubjectsEntity> coreSubjectsEntityList = entityManager.createNativeQuery(sqlChilds,CoreSubjectsEntity.class).getResultList();
+                                        for(CoreSubjectsEntity cb : coreSubjectsEntityList){
+                                            HashMap<String, Object> cbmap = new HashMap<String, Object>();
+                                            cbmap = cb.getTopicObject(cb,entityManager);
+                                            coreSubList.add(cbmap);
+                                        }
+                                        sHmpam.put("childSubjects", coreSubList);
                                         finalList.add(sHmpam);
                                     }
                                     returnList_future.put("data", finalList);

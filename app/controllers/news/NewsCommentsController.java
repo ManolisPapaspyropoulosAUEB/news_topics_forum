@@ -73,6 +73,13 @@ public class NewsCommentsController extends Application {
                                     return add_result;
                                 }
 
+                                NewsEntity newsEntity = entityManager.find(NewsEntity.class,Long.valueOf(newsId));
+                                if(!newsEntity.getStatus().equalsIgnoreCase("Δημοσιευμένη")){
+                                    add_result.put("status", "error");
+                                    add_result.put("message", "Η είδηση δεν βρίσκετε σε κατάσταση `Δημοσιευμένη` και γιαυτό δεν μπορείτε να σχολιάσετε");
+                                    return add_result;
+                                }
+
                                 NewsCommentsEntity newsCommentsEntity = new NewsCommentsEntity();
                                 newsCommentsEntity.setMessage(message);
                                 newsCommentsEntity.setNewsId(Long.valueOf(newsId));
@@ -105,13 +112,22 @@ public class NewsCommentsController extends Application {
     @SuppressWarnings({"Duplicates", "unchecked"})
     @BodyParser.Of(BodyParser.Json.class)
     public Result updateNewComment(final Http.Request request) throws IOException {
-        String userId = request.session().get("userId").orElse(null);
         JsonNode json = request.body().asJson();
         if (json == null) {
             return badRequest("Expecting Json data");
         } else {
             try {
+
                 ObjectNode result = Json.newObject();
+                String userId = request.session().get("userId").orElse(null);
+                String roleId = request.session().get("roleId").orElse(null);
+                boolean canModify = checkIfCanModifyRecord(userId,roleId,"news_comments" , json.findPath("id").asText() );
+                if(!canModify){
+                    result.put("status", "error");
+                    result.put("message", "Δεν έχετε δικαίωμα για την συγκεκριμένη ενέργεια");
+                    return ok(result);
+                }
+
                 CompletableFuture<JsonNode> addFuture = CompletableFuture.supplyAsync(() -> {
                             return jpaApi.withTransaction(entityManager -> {
                                 ObjectNode update_result = Json.newObject();
@@ -242,6 +258,53 @@ public class NewsCommentsController extends Application {
 
 
     @SuppressWarnings({"Duplicates", "unchecked"})
+    @BodyParser.Of(BodyParser.Json.class)
+    public Result deleteNewComment(final Http.Request request) throws IOException {
+        JsonNode json = request.body().asJson();
+        if (json == null) {
+            return badRequest("Expecting Json data");
+        } else {
+            try {
+
+                ObjectNode result = Json.newObject();
+                String userId = request.session().get("userId").orElse(null);
+                String roleId = request.session().get("roleId").orElse(null);
+                boolean canModify = checkIfCanModifyRecord(userId,roleId,"news_comments" , json.findPath("id").asText() );
+                if(!canModify){
+                    result.put("status", "error");
+                    result.put("message", "Δεν έχετε δικαίωμα για την συγκεκριμένη ενέργεια");
+                    return ok(result);
+                }
+
+                CompletableFuture<JsonNode> addFuture = CompletableFuture.supplyAsync(() -> {
+                            return jpaApi.withTransaction(entityManager -> {
+                                ObjectNode update_result = Json.newObject();
+                                long id = json.findPath("id").asLong();
+                                NewsCommentsEntity newsCommentsEntity = entityManager.find(NewsCommentsEntity.class,id);
+                                entityManager.remove(newsCommentsEntity);
+                                update_result.put("status", "success");
+                                update_result.put("DO_ID", newsCommentsEntity.getId());
+                                update_result.put("system", "news");
+                                update_result.put("message", "Το σχόλιο διαγράφθηκε με απιτυχία!");
+                                return update_result;
+                            });
+                        },
+                        executionContext);
+                result = (ObjectNode) addFuture.get();
+                return ok(result, request);
+            } catch (Exception e) {
+                ObjectNode result = Json.newObject();
+                e.printStackTrace();
+                result.put("status", "error");
+                result.put("message", "Προβλημα κατα την καταχωρηση");
+                return ok(result);
+            }
+        }
+    }
+
+
+
+    @SuppressWarnings({"Duplicates", "unchecked"})
     public Result getNewComments(final Http.Request request) throws ExecutionException, InterruptedException {
         JsonNode json = request.body().asJson();
         if (json == null) {
@@ -288,22 +351,7 @@ public class NewsCommentsController extends Application {
                                             sqlcomments, NewsCommentsEntity.class).getResultList();
                                     for (NewsCommentsEntity j : newsCommentsEntityList) {
                                         HashMap<String, Object> sHmpam = new HashMap<String, Object>();
-                                        sHmpam.put("id", j.getId());
-                                        sHmpam.put("message", j.getMessage());
-                                        sHmpam.put("status", j.getStatus());
-                                        sHmpam.put("getupdateDate", j.getUpdateDate());
-
-                                        sHmpam.put("createdBy", j.getCreatedBy());
-                                        sHmpam.put("creationDate", j.getCreationDate());
-                                        SecurityUsersEntity createdBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
-                                        sHmpam.put("createdByName", createdBy.getFirstname()+" "+createdBy.getLastname());
-
-                                        sHmpam.put("approvalBy", j.getApprovalBy());
-                                        sHmpam.put("approvalDate", j.getApprovalDate());
-                                        SecurityUsersEntity approvalBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
-                                        sHmpam.put("approvalByName", approvalBy.getFirstname()+" "+approvalBy.getLastname());
-
-
+                                        sHmpam=j.gatCommentObject(j,entityManager);
                                         finalList.add(sHmpam);
                                     }
                                     returnList_future.put("data", finalList);

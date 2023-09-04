@@ -138,6 +138,16 @@ package controllers.news.javascript {
       """
     )
   
+    // @LINE:59
+    def deleteNewComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.news.NewsCommentsController.deleteNewComment",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "deleteNewComment"})
+        }
+      """
+    )
+  
     // @LINE:54
     def addNewComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsCommentsController.addNewComment",

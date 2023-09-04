@@ -1,8 +1,11 @@
 package models.news_package;
 
+import models.security.SecurityUsersEntity;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Objects;
 
 @Entity
@@ -125,4 +128,27 @@ public class NewsCommentsEntity {
     public void setApprovalDate(Date approvalDate) {
         this.approvalDate = approvalDate;
     }
+
+
+    public HashMap<String, Object> gatCommentObject(NewsCommentsEntity comment , EntityManager entityManager){
+        HashMap<String, Object> sHmpam = new HashMap<String, Object>();
+
+        sHmpam.put("id", comment.getId());
+        sHmpam.put("message", comment.getMessage());
+        sHmpam.put("status", comment.getStatus());
+        sHmpam.put("getupdateDate", comment.getUpdateDate());
+
+        sHmpam.put("createdBy", comment.getCreatedBy());
+        sHmpam.put("creationDate", comment.getCreationDate());
+        SecurityUsersEntity createdBy = entityManager.find(SecurityUsersEntity.class,comment.getCreatedBy());
+        sHmpam.put("createdByName", createdBy.getFirstname()+" "+createdBy.getLastname());
+
+        sHmpam.put("approvalBy", comment.getApprovalBy());
+        sHmpam.put("approvalDate", comment.getApprovalDate());
+        SecurityUsersEntity approvalBy = entityManager.find(SecurityUsersEntity.class,comment.getCreatedBy());
+        sHmpam.put("approvalByName", approvalBy.getFirstname()+" "+approvalBy.getLastname());
+        return sHmpam;
+    }
+
+
 }

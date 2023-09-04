@@ -96,6 +96,7 @@ class Routes(
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """rejectNewComment""", """controllers.news.NewsCommentsController.rejectNewComment(req:Request)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """approveNewComment""", """controllers.news.NewsCommentsController.approveNewComment(req:Request)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """getNewComments""", """controllers.news.NewsCommentsController.getNewComments(req:Request)"""),
+    ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """deleteNewComment""", """controllers.news.NewsCommentsController.deleteNewComment(req:Request)"""),
     Nil
   ).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
     case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
@@ -757,6 +758,26 @@ class Routes(
     )
   )
 
+  // @LINE:59
+  private[this] lazy val controllers_news_NewsCommentsController_deleteNewComment33_route = Route("POST",
+    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deleteNewComment")))
+  )
+  private[this] lazy val controllers_news_NewsCommentsController_deleteNewComment33_invoker = createInvoker(
+    
+    (req:play.mvc.Http.Request) =>
+      NewsCommentsController_3.deleteNewComment(fakeValue[play.mvc.Http.Request]),
+    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+      "router",
+      "controllers.news.NewsCommentsController",
+      "deleteNewComment",
+      Seq(classOf[play.mvc.Http.Request]),
+      "POST",
+      this.prefix + """deleteNewComment""",
+      """""",
+      Seq()
+    )
+  )
+
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
@@ -986,6 +1007,13 @@ class Routes(
       call { 
         controllers_news_NewsCommentsController_getNewComments32_invoker.call(
           req => NewsCommentsController_3.getNewComments(req))
+      }
+  
+    // @LINE:59
+    case controllers_news_NewsCommentsController_deleteNewComment33_route(params@_) =>
+      call { 
+        controllers_news_NewsCommentsController_deleteNewComment33_invoker.call(
+          req => NewsCommentsController_3.deleteNewComment(req))
       }
   }
 }

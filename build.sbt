@@ -43,6 +43,7 @@ lazy val root = (project in file("."))
     PlayKeys.devSettings += "play.server.http.idleTimeout" -> "infinite"
 
   )
+
 libraryDependencies += guice
 libraryDependencies += "org.elasticsearch.client" % "elasticsearch-rest-client" % "7.11.1"
 libraryDependencies += "org.elasticsearch.client" % "transport" % "7.11.1"

@@ -1,5 +1,8 @@
 package models.core_data;
 
+import models.news_package.NewsCommentsEntity;
+import models.security.SecurityUsersEntity;
+
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.sql.Timestamp;
@@ -135,9 +138,9 @@ public class CoreSubjectsEntity {
 
 
 
-    @SuppressWarnings({"Duplicates", "unchecked"})
-    public HashMap<String, Object> getSubjectPoiObject(CoreSubjectsEntity subjectsEntity , EntityManager entityManager) {
+    public HashMap<String, Object> getTopicObject(CoreSubjectsEntity subjectsEntity , EntityManager entityManager){
         HashMap<String, Object> sHmpam = new HashMap<String, Object>();
+
         sHmpam.put("id", subjectsEntity.getId());
         sHmpam.put("title", subjectsEntity.getTitle());
         sHmpam.put("status", subjectsEntity.getStatus());
@@ -146,8 +149,12 @@ public class CoreSubjectsEntity {
         sHmpam.put("approvedBy", subjectsEntity.getApprovedBy());
         sHmpam.put("creationDate", subjectsEntity.getCreationDate());
         sHmpam.put("approvedDate", subjectsEntity.getApprovedDate());
+
         return sHmpam;
     }
+
+
+
 
 
 

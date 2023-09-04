@@ -1,311 +1,949 @@
-2023-09-02 19:25:21 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 19:25:22 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 19:25:22 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 19:25:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 19:25:23 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 19:25:23 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 14:25:08 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:25:09 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:25:09 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 14:25:09 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:25:09 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:25:09 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 19:25:23 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 19:55:00 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 19:55:01 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 19:55:01 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 19:55:01 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 19:55:01 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 19:55:01 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 19:55:01 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 14:25:09 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 14:25:25 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:25:27 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:25:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:25:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:25:31 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:25:31 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:25:31 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:25:31 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:25:31 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:25:31 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:26:40 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:26:41 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:26:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:26:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:26:46 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:26:47 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:26:47 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:26:47 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:26:47 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:26:47 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:28:35 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:28:36 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:28:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:28:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:28:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:28:41 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:28:42 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:28:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:28:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:28:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:31:08 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:31:09 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:31:09 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:31:09 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:31:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:31:15 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:31:15 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:31:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:31:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:31:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:31:59 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:32:00 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:32:00 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:32:00 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:32:05 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:32:05 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:32:05 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:32:05 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:32:05 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:32:06 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:49:14 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:49:15 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:49:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:49:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:49:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:49:21 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:49:21 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:49:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:49:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:49:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:51:52 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:51:53 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:51:53 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:51:54 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:51:59 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:51:59 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:51:59 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:51:59 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:51:59 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:52:00 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:53:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:53:21 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:53:21 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:53:21 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 14:53:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:53:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:53:21 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 19:55:01 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 20:01:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 20:01:15 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 20:01:15 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 20:01:15 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 20:01:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 20:01:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 20:01:15 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 14:53:21 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 14:53:35 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:53:36 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:53:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:53:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:53:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:53:41 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:53:41 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:53:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:53:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:53:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:54:42 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:54:43 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:54:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:54:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:54:48 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:54:48 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:54:48 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:54:48 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:54:48 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:54:49 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:55:32 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:55:33 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:55:33 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:55:34 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:55:39 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:55:39 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:55:39 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:55:39 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:55:39 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:55:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:57:12 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:57:13 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:57:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:57:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:57:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 14:57:19 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 14:57:19 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 14:57:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 14:57:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 14:57:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:01:28 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:01:29 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:01:29 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:01:29 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:01:34 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:01:34 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:01:35 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:01:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:01:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:01:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:13:47 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:13:47 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:13:48 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:13:48 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 15:13:48 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:13:48 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:13:48 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 20:01:15 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 20:27:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 20:27:18 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 20:27:18 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 20:27:18 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 20:27:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 20:27:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 20:27:18 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 15:13:48 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 15:14:11 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:14:14 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:14:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:14:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:14:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:14:18 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:14:18 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:14:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:14:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:14:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:14:19 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:14:19 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:14:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:14:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:14:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:16:42 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:16:43 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:16:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:16:44 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:16:49 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:16:49 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:16:49 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:16:49 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:16:49 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:16:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:20:05 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:20:06 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:20:06 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:20:07 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:20:12 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:20:12 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:20:12 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:20:12 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:20:12 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:20:13 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:20:34 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:20:35 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:20:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:20:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:20:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:20:40 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:20:40 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:20:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:20:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:20:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:42:41 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:42:42 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:42:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:42:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:42:44 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:42:45 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:42:45 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:42:45 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:42:45 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:42:49 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:43:46 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:43:47 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:43:47 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:43:47 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:43:52 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:43:53 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:43:53 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:43:53 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:43:53 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:43:53 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:45:07 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:45:09 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:45:09 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:45:10 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:45:13 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:45:13 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:45:13 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:45:13 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:45:13 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:45:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:46:32 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:46:33 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:46:33 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:46:34 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:46:39 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:46:39 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:46:39 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:46:39 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:46:39 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:46:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:55:20 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:55:21 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:55:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:55:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:55:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:55:26 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:55:26 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:55:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:55:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:55:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:56:55 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:56:56 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:56:56 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:56:56 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:57:02 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:57:02 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:57:02 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:57:02 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:57:02 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:57:03 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:58:06 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:58:07 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:58:07 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:58:07 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:58:13 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 15:58:13 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 15:58:13 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 15:58:13 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 15:58:13 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 15:58:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:02:24 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:02:26 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:02:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:02:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:02:30 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:02:30 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:02:30 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:02:30 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:02:30 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:02:31 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:03:31 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:03:32 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:03:32 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:03:32 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:03:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:03:37 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:03:37 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:03:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:03:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:03:38 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:05:32 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:05:33 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:05:33 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:05:33 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:05:38 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:05:39 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:05:39 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:05:39 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:05:39 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:05:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:06:37 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:06:39 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:06:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:06:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:06:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:06:43 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:06:43 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:06:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:06:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:06:44 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:20:03 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:20:05 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:20:05 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:20:05 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:20:11 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:20:11 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:20:11 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:20:11 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:20:11 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:20:12 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:20:12 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:20:12 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:20:12 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:20:12 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:20:13 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:23:01 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:23:02 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:23:02 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:23:02 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:23:07 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:23:07 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:23:07 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:23:07 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:23:07 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:23:08 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:23:08 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:23:08 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:23:08 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:23:08 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:23:09 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:23:09 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:23:09 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:23:09 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:23:09 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:23:10 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:25:18 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:25:22 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:25:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:25:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:25:25 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:25:26 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:25:26 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:25:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:25:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:25:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:25:27 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:25:27 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:25:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:25:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:25:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:25:27 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:25:27 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:25:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:25:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:25:28 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:27:28 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:27:29 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:27:29 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:27:30 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:27:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:27:35 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:27:35 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:27:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:27:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:27:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:27:36 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:27:36 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:27:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:27:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:27:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:27:37 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:27:37 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:27:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:27:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:27:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:47:05 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:47:07 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:47:07 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:47:07 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:47:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:47:14 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:47:14 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:47:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:47:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:47:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:47:15 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:47:15 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:47:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:47:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:47:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:47:16 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:47:16 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:47:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:47:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:47:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:47:16 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:47:17 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:47:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:47:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:47:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:51:20 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:51:22 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:51:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:51:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:51:29 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:51:30 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:51:30 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:51:30 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:51:30 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:51:31 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:51:31 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:51:31 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:51:31 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:51:31 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:51:32 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:51:32 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:51:32 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:51:32 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:51:32 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:51:32 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:51:33 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:51:33 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:51:33 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:51:33 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:51:33 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:55:23 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:55:29 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:55:29 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:55:29 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:55:34 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:55:34 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:55:35 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:55:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:55:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:55:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:55:36 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:55:36 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:55:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:55:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:55:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:55:37 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:55:37 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:55:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:55:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:55:38 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 16:55:38 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 16:55:38 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 16:55:38 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 16:55:38 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 16:55:39 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:05:41 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:05:42 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:05:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:05:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:05:50 [31mWARN [0;39m [36mp.s.a.io.netty.util.HashedWheelTimer[0;39m [35m[0;39m An exception was thrown by TimerTask.
+java.lang.IllegalStateException: cannot be started once stopped
+	at play.shaded.ahc.io.netty.util.HashedWheelTimer.start(HashedWheelTimer.java:341)
+	at play.shaded.ahc.io.netty.util.HashedWheelTimer.newTimeout(HashedWheelTimer.java:416)
+	at play.shaded.ahc.org.asynchttpclient.netty.channel.DefaultChannelPool.scheduleNewIdleChannelDetector(DefaultChannelPool.java:95)
+	at play.shaded.ahc.org.asynchttpclient.netty.channel.DefaultChannelPool.access$900(DefaultChannelPool.java:43)
+	at play.shaded.ahc.org.asynchttpclient.netty.channel.DefaultChannelPool$IdleChannelDetector.run(DefaultChannelPool.java:378)
+	at play.shaded.ahc.io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
+	at play.shaded.ahc.io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
+	at play.shaded.ahc.io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
+	at play.shaded.ahc.io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-09-04 17:05:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:05:50 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:05:50 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:05:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:05:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:05:51 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:05:51 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:05:51 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:05:51 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:05:51 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:05:52 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:05:52 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:05:52 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:05:52 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:05:52 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:05:53 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:05:53 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:05:53 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:05:53 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:05:53 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:05:53 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:05:54 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:05:54 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:05:54 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:05:54 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:05:54 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:06:32 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:06:34 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:06:34 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:06:34 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:06:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:06:41 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:06:41 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:06:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:06:41 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:06:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:06:42 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:06:42 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:06:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:06:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:06:42 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:06:43 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:06:43 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:06:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:06:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:06:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:06:43 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:06:43 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:06:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:06:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:06:44 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:06:44 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:06:44 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:06:44 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:06:44 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:06:44 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:10:07 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:10:10 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:10:10 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:10:10 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:10:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:10:16 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:10:16 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:10:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:10:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:10:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:10:17 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:10:17 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:10:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:10:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:10:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:10:17 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:10:17 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:10:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:10:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:10:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:10:18 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:10:18 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:10:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:10:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:10:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:10:19 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:10:19 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:10:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:10:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:10:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:10:20 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:10:20 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:10:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:10:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:10:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:26:10 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:26:12 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:26:12 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:26:12 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:26:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:26:19 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:26:19 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:26:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:26:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:26:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:26:20 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:26:20 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:26:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:26:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:26:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:26:20 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:26:20 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:26:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:26:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:26:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:26:21 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:26:21 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:26:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:26:21 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:26:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:26:22 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:26:22 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:26:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:26:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:26:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:26:22 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:26:22 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:26:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:26:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:26:23 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:26:23 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:26:23 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:26:23 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:26:23 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:26:23 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:28:07 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:28:08 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:28:08 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:28:08 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:28:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:28:15 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:28:15 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:28:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:28:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:28:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:28:16 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:28:16 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:28:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:28:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:28:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:28:17 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:28:17 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:28:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:28:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:28:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:28:17 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:28:17 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:28:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:28:17 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:28:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:28:18 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:28:18 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:28:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:28:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:28:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:28:19 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:28:19 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:28:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:28:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:28:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:28:19 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:28:19 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:28:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:28:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:28:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 17:28:20 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 17:28:20 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 17:28:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 17:28:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 17:28:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 18:04:46 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 18:04:47 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 18:04:47 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 18:04:47 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 18:04:47 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 18:04:47 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 18:04:47 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 20:27:18 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 20:29:23 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 20:29:23 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 20:29:23 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 20:29:23 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 20:29:23 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 20:29:23 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 20:29:23 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 18:04:47 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 18:06:02 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 18:06:03 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 18:06:03 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 18:06:03 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 18:06:03 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 18:06:03 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 18:06:03 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 20:29:23 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 21:06:59 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 21:06:59 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 21:06:59 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 21:06:59 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 21:06:59 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 21:06:59 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 21:06:59 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 18:06:03 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 18:06:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 18:06:28 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 18:06:28 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 18:06:28 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 18:06:28 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 18:06:28 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 18:06:28 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 21:06:59 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 21:11:00 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 21:11:00 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 21:11:00 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 21:11:00 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 21:11:00 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 21:11:00 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 21:11:00 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 18:06:28 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 18:07:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 18:07:38 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 18:07:38 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 18:07:38 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 18:07:38 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 18:07:38 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 18:07:38 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 21:11:00 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 21:18:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 21:18:22 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 21:18:22 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 21:18:22 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 21:18:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 21:18:22 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 21:18:23 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 18:07:38 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:11:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:11:50 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:11:50 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:11:50 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:11:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:11:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:11:50 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 21:18:23 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 21:30:19 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 21:30:20 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 21:30:20 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 21:30:20 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 21:30:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 21:30:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 21:30:20 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:11:50 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:13:59 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:13:59 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:13:59 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:13:59 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:13:59 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:13:59 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:13:59 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 21:30:20 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 21:30:56 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 21:30:56 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 21:30:56 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 21:30:56 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 21:30:56 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 21:30:56 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 21:30:56 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:13:59 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:14:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:14:37 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:14:37 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:14:37 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:14:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:14:37 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:14:37 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 21:30:56 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 21:41:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 21:41:27 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 21:41:28 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 21:41:28 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 21:41:28 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 21:41:28 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 21:41:28 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:14:37 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:15:10 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:15:10 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:15:10 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:15:10 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:15:10 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:15:10 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:15:10 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 21:41:28 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 21:51:25 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 21:51:25 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 21:51:25 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 21:51:25 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 21:51:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 21:51:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 21:51:26 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:15:10 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:15:55 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:15:55 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:15:55 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:15:55 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:15:55 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:15:55 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:15:55 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 21:51:26 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 21:54:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 21:54:27 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 21:54:27 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 21:54:27 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 21:54:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 21:54:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 21:54:27 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:15:55 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:18:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:18:27 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:18:27 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:18:27 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:18:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:18:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:18:27 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 21:54:27 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 22:26:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 22:26:27 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 22:26:27 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 22:26:27 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 22:26:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 22:26:27 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 22:26:27 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:18:27 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:23:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:23:16 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:23:16 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:23:16 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:23:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:23:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:23:16 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 22:26:27 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 22:27:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 22:27:14 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 22:27:14 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 22:27:14 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 22:27:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 22:27:14 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 22:27:15 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:23:16 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:49:32 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:49:32 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:49:32 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:49:32 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:49:32 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:49:32 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:49:32 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 22:27:15 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 22:34:34 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 22:34:34 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 22:34:35 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 22:34:35 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 22:34:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 22:34:35 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 22:34:35 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:49:32 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:49:33 [1;31mERROR[0;39m [36mplay.http.JsonHttpErrorHandler[0;39m [35m[0;39m 
+
+! @82n5b7p8f - Internal server error, for (POST) [/getCoreSubjects] ->
+
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[PersistenceException: org.hibernate.exception.SQLGrammarException: could not extract ResultSet]]
+	at play.api.http.HttpErrorHandlerExceptions$.$anonfun$convertToPlayException$2(HttpErrorHandler.scala:381)
+	at scala.Option.map(Option.scala:242)
+	at play.api.http.HttpErrorHandlerExceptions$.convertToPlayException(HttpErrorHandler.scala:380)
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:373)
+	at play.api.http.HttpErrorHandlerExceptions.throwableToUsefulException(HttpErrorHandler.scala)
+	at play.http.JsonHttpErrorHandler.throwableToUsefulException(JsonHttpErrorHandler.java:112)
+	at play.http.JsonHttpErrorHandler.onServerError(JsonHttpErrorHandler.java:67)
+	at play.core.j.JavaHttpErrorHandlerAdapter.onServerError(JavaHttpErrorHandlerAdapter.scala:32)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:430)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:422)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:454)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:63)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:100)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:100)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1020)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1656)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1594)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1602)
+	at org.hibernate.query.Query.getResultList(Query.java:165)
+	at controllers.coreData.CoreSubjectsController.lambda$getCoreSubjects$10(CoreSubjectsController.java:323)
+	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:169)
+	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:126)
+	at play.db.jpa.DefaultJPAApi.withTransaction(DefaultJPAApi.java:101)
+	at controllers.coreData.CoreSubjectsController.lambda$getCoreSubjects$11(CoreSubjectsController.java:296)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:63)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:67)
+	at org.hibernate.loader.Loader.getResultSet(Loader.java:2304)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2057)
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:2019)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:948)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349)
+	at org.hibernate.loader.Loader.doList(Loader.java:2850)
+	at org.hibernate.loader.Loader.doList(Loader.java:2832)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2664)
+	at org.hibernate.loader.Loader.list(Loader.java:2659)
+	at org.hibernate.loader.custom.CustomLoader.list(CustomLoader.java:338)
+	at org.hibernate.internal.SessionImpl.listCustomQuery(SessionImpl.java:2141)
+	at org.hibernate.internal.AbstractSharedSessionContract.list(AbstractSharedSessionContract.java:1163)
+	at org.hibernate.query.internal.NativeQueryImpl.doList(NativeQueryImpl.java:176)
+	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1593)
+	... 11 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'rols.id' in 'where clause'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
+	... 25 common frames omitted
+2023-09-04 20:49:46 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:49:46 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:49:46 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:49:46 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:49:46 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:49:46 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:49:46 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 22:34:35 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 22:37:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 22:37:50 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 22:37:50 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 22:37:50 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 22:37:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 22:37:50 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 22:37:50 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:49:46 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:51:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:51:20 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:51:20 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:51:20 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:51:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:51:20 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:51:21 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 22:37:51 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 22:44:43 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 22:44:43 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 22:44:44 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 22:44:44 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 22:44:44 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 22:44:44 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 22:44:44 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:51:21 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:56:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:56:36 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:56:36 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:56:36 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:56:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:56:36 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:56:36 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 22:44:44 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 22:45:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 22:45:16 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 22:45:16 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 22:45:16 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 22:45:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 22:45:16 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 22:45:16 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:56:36 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:58:03 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:58:03 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:58:03 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:58:03 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:58:03 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:58:03 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:58:03 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 22:45:16 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 22:46:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 22:46:15 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 22:46:15 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 22:46:15 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 22:46:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 22:46:15 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 22:46:15 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+2023-09-04 20:58:03 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:58:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
+2023-09-04 20:58:26 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2023-09-04 20:58:26 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
+2023-09-04 20:58:26 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
+2023-09-04 20:58:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
+2023-09-04 20:58:26 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
+2023-09-04 20:58:26 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
 
     play.filters.headers.SecurityHeadersFilter
     play.filters.hosts.AllowedHostsFilter
     play.filters.cors.CORSFilter
 
-2023-09-02 22:46:15 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 22:54:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 22:54:18 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 22:54:18 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 22:54:18 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 22:54:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 22:54:18 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 22:54:19 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-    play.filters.cors.CORSFilter
-
-2023-09-02 22:54:19 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 22:55:54 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 22:55:54 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 22:55:55 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 22:55:55 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 22:55:55 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 22:55:55 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 22:55:55 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-    play.filters.cors.CORSFilter
-
-2023-09-02 22:55:55 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 23:02:55 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 23:02:56 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 23:02:56 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 23:02:56 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 23:02:56 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 23:02:56 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 23:02:56 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-    play.filters.cors.CORSFilter
-
-2023-09-02 23:02:56 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
-2023-09-02 23:04:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Shutting down connection pool.
-2023-09-02 23:04:40 [31mWARN [0;39m [36mapplication[0;39m [35m[0;39m Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
-2023-09-02 23:04:40 [31mWARN [0;39m [36mplay.api.Configuration[0;39m [35m[0;39m application.conf @ file:/E:/development/ergasia_Phorum(INTSTAPEN)/java%20play%202.8/target/scala-2.13/classes/application.conf: 5: user is deprecated, use username instead
-2023-09-02 23:04:40 [34mINFO [0;39m [36mplay.api.db.DefaultDBApi[0;39m [35m[0;39m Database [default] initialized
-2023-09-02 23:04:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m Creating Pool for datasource 'default'
-2023-09-02 23:04:40 [34mINFO [0;39m [36mplay.api.db.HikariCPConnectionPool[0;39m [35m[0;39m datasource [default] bound to JNDI as DefaultDS
-2023-09-02 23:04:40 [34mINFO [0;39m [36mplay.api.http.EnabledFilters[0;39m [35m[0;39m Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
-
-    play.filters.headers.SecurityHeadersFilter
-    play.filters.hosts.AllowedHostsFilter
-    play.filters.cors.CORSFilter
-
-2023-09-02 23:04:40 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)
+2023-09-04 20:58:26 [34mINFO [0;39m [36mplay.api.Play[0;39m [35m[0;39m Application started (Dev) (no global state)

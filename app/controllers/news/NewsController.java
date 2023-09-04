@@ -122,13 +122,23 @@ extends Application {
     @SuppressWarnings({"Duplicates", "unchecked"})
     @BodyParser.Of(BodyParser.Json.class)
     public Result updateNew(final Http.Request request) throws IOException {
-        String userId = request.session().get("userId").orElse(null);
         JsonNode json = request.body().asJson();
         if (json == null) {
             return badRequest("Expecting Json data");
         } else {
             try {
+
                 ObjectNode result = Json.newObject();
+                String userId = request.session().get("userId").orElse(null);
+                String roleId = request.session().get("roleId").orElse(null);
+                boolean canModify = checkIfCanModifyRecord(userId,roleId,"news" , json.findPath("id").asText() );
+                if(!canModify){
+                    result.put("status", "error");
+                    result.put("message", "Δεν έχετε δικαίωμα για την συγκεκριμένη ενέργεια");
+                    return ok(result);
+                }
+
+
                 CompletableFuture<JsonNode> addFuture = CompletableFuture.supplyAsync(() -> {
                             return jpaApi.withTransaction(entityManager -> {
                                 ObjectNode update_result = Json.newObject();
@@ -319,9 +329,7 @@ extends Application {
                                                 sqlcomments, NewsCommentsEntity.class).getResultList();
                                         for(NewsCommentsEntity commentsEntity : newsCommentsEntityList){
                                             HashMap<String, Object> cmap = new HashMap<String, Object>();
-                                            cmap.put("id", commentsEntity.getId());
-                                            cmap.put("message", commentsEntity.getMessage());
-                                            cmap.put("creationDate", commentsEntity.getCreationDate());
+                                            cmap=commentsEntity.gatCommentObject(commentsEntity,entityManager);
                                             commentsList.add(cmap);
                                         }
                                         sHmpam.put("comments", commentsList);
@@ -353,13 +361,22 @@ extends Application {
     @SuppressWarnings({"Duplicates", "unchecked"})
     @BodyParser.Of(BodyParser.Json.class)
     public Result deleteNew(final Http.Request request) throws IOException {
-        String userId = request.session().get("userId").orElse(null);
         JsonNode json = request.body().asJson();
         if (json == null) {
             return badRequest("Expecting Json data");
         } else {
             try {
+
                 ObjectNode result = Json.newObject();
+                String userId = request.session().get("userId").orElse(null);
+                String roleId = request.session().get("roleId").orElse(null);
+                boolean canModify = checkIfCanModifyRecord(userId,roleId,"news" , json.findPath("id").asText() );
+                if(!canModify){
+                    result.put("status", "error");
+                    result.put("message", "Δεν έχετε δικαίωμα για την συγκεκριμένη ενέργεια");
+                    return ok(result);
+                }
+
                 CompletableFuture<JsonNode> addFuture = CompletableFuture.supplyAsync(() -> {
                             return jpaApi.withTransaction(entityManager -> {
                                 ObjectNode update_result = Json.newObject();
@@ -399,13 +416,23 @@ extends Application {
     @SuppressWarnings({"Duplicates", "unchecked"})
     @BodyParser.Of(BodyParser.Json.class)
     public Result submitNew(final Http.Request request) throws IOException {
-        String userId = request.session().get("userId").orElse(null);
         JsonNode json = request.body().asJson();
         if (json == null) {
             return badRequest("Expecting Json data");
         } else {
             try {
+
                 ObjectNode result = Json.newObject();
+                String userId = request.session().get("userId").orElse(null);
+                String roleId = request.session().get("roleId").orElse(null);
+                boolean canModify = checkIfCanModifyRecord(userId,roleId,"news" , json.findPath("id").asText() );
+                if(!canModify){
+                    result.put("status", "error");
+                    result.put("message", "Δεν έχετε δικαίωμα για την συγκεκριμένη ενέργεια");
+                    return ok(result);
+                }
+
+
                 CompletableFuture<JsonNode> addFuture = CompletableFuture.supplyAsync(() -> {
                             return jpaApi.withTransaction(entityManager -> {
                                 ObjectNode update_result = Json.newObject();

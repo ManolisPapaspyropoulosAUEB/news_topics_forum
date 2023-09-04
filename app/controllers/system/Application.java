@@ -12,6 +12,7 @@ import play.libs.ws.WSBodyWritables;
 import play.mvc.*;
 import javax.inject.Inject;
 import java.io.IOException;
+import java.math.BigInteger;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -62,6 +63,39 @@ public class Application extends Controller implements WSBodyReadables, WSBodyWr
             return ok(result);
         }
     }
+
+
+    public boolean checkIfCanModifyRecord ( String userId , String roleId , String systemTable , String recordId){
+        boolean resultFlag=false;
+        ObjectNode resultAsync = Json.newObject();
+        CompletableFuture<JsonNode> checkFuture = CompletableFuture.supplyAsync(() -> {
+            return jpaApi.withTransaction(entityManager -> {
+                ObjectNode check_result = Json.newObject();
+
+                String sql = "select count(*) from "+systemTable+" where id="+recordId+" and created_by="+userId;
+
+                System.out.println(sql);
+
+                BigInteger total = (BigInteger) entityManager.createNativeQuery( sql).getSingleResult();
+
+                if(roleId.equalsIgnoreCase("1") || roleId.equalsIgnoreCase("2") || roleId.equalsIgnoreCase("3") ){
+                    if(total.intValue()>0){
+                        check_result.put("status","ok");
+                    }else{
+                        check_result.put("status","error");
+                    }
+                }else if (roleId.equalsIgnoreCase("4")){
+                    check_result.put("status","ok");
+                }
+
+                return check_result;
+            });
+        }, executionContext);
+        resultAsync = (ObjectNode) checkFuture.join();
+        return resultAsync.findPath("status").asText().equalsIgnoreCase("ok");
+    }
+
+
 
 
 

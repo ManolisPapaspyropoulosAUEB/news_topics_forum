@@ -92,6 +92,12 @@ package controllers.news {
       Call("POST", _prefix + { _defaultPrefix } + "approveNewComment")
     }
   
+    // @LINE:59
+    def deleteNewComment(): Call = {
+      
+      Call("POST", _prefix + { _defaultPrefix } + "deleteNewComment")
+    }
+  
     // @LINE:54
     def addNewComment(): Call = {
       

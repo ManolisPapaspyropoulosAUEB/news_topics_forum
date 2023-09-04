@@ -56,3 +56,4 @@ POST        /updateNewComment          controllers.news.NewsCommentsController.u
 POST        /rejectNewComment          controllers.news.NewsCommentsController.rejectNewComment(req: Request)
 POST        /approveNewComment         controllers.news.NewsCommentsController.approveNewComment(req: Request)
 POST        /getNewComments            controllers.news.NewsCommentsController.getNewComments(req: Request)
+POST        /deleteNewComment          controllers.news.NewsCommentsController.deleteNewComment(req: Request)

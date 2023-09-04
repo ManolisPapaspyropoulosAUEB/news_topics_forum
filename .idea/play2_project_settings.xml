@@ -3,6 +3,13 @@
   <component name="Play2ExcludedModulesSettings">
     <option name="INFO">
       <map>
+        <entry key="forum_java">
+          <value>
+            <ProjectSettingsEntry>
+              <option name="playDistrPath" value="$USER_HOME$/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/typesafe/play/play_2.13/2.8.8/play_2.13-2.8.8.jar" />
+            </ProjectSettingsEntry>
+          </value>
+        </entry>
         <entry key="framwrork_java">
           <value>
             <ProjectSettingsEntry>
@@ -13,7 +20,7 @@
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
-              <option name="sourceDir" value="D:\developm\Framework(PR)\java\app" />
+              <option name="sourceDir" value="E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\app" />
               <option name="confDir" value="E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\app" />
               <option name="templateImports">
                 <list>
