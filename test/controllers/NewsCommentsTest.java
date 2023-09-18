@@ -30,7 +30,7 @@ public class NewsCommentsTest extends WithApplication {
                 .uri("/addNewComment")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS);
         Result result = route(app, request);
@@ -51,7 +51,7 @@ public class NewsCommentsTest extends WithApplication {
                 .uri("/addNewComment")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS);
         Result result = route(app, request);
@@ -70,7 +70,7 @@ public class NewsCommentsTest extends WithApplication {
                 .uri("/updateNewComment")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS_update);
         Result result_update = route(app, request_update);
@@ -97,7 +97,7 @@ public class NewsCommentsTest extends WithApplication {
                 .uri("/addNewComment")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS);
         Result result = route(app, request);
@@ -114,7 +114,7 @@ public class NewsCommentsTest extends WithApplication {
                 .uri("/approveNewComment")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS_approve);
         Result result_approve = route(app, request_approve);
@@ -138,7 +138,7 @@ public class NewsCommentsTest extends WithApplication {
                 .uri("/addNewComment")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS);
         Result result = route(app, request);
@@ -155,7 +155,7 @@ public class NewsCommentsTest extends WithApplication {
                 .uri("/rejectNewComment")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS_reject);
         Result result_reject = route(app, request_reject);

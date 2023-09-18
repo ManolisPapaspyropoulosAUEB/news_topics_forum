@@ -40,7 +40,7 @@ public class NewsTest extends WithApplication {
                 .uri("/addNew")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS);
         Result result = route(app, request);
@@ -57,7 +57,7 @@ public class NewsTest extends WithApplication {
                     .uri("/submitNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_submit);
             Result resul_submit = route(app, request_submit);
@@ -73,7 +73,7 @@ public class NewsTest extends WithApplication {
                     .uri("/approvalNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_approval);
             Result resul_approval = route(app, request_approval);
@@ -89,7 +89,7 @@ public class NewsTest extends WithApplication {
                     .uri("/publishNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_publish);
             Result resul_publish = route(app, request_publish);
@@ -106,7 +106,7 @@ public class NewsTest extends WithApplication {
                     .uri("/addNewComment")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_comment);
             Result result_comment = route(app, request_comment);
@@ -135,7 +135,7 @@ public class NewsTest extends WithApplication {
                 .uri("/addNew")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS);
         Result result = route(app, request);
@@ -152,7 +152,7 @@ public class NewsTest extends WithApplication {
                     .uri("/submitNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_submit);
             Result resul_submit = route(app, request_submit);
@@ -170,7 +170,7 @@ public class NewsTest extends WithApplication {
                     .uri("/rejectNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_reject);
             Result resul_reject = route(app, request_reject);
@@ -202,7 +202,7 @@ public class NewsTest extends WithApplication {
                 .uri("/addNew")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS);
         Result result = route(app, request);
@@ -219,7 +219,7 @@ public class NewsTest extends WithApplication {
                     .uri("/submitNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_submit);
             Result resul_submit = route(app, request_submit);
@@ -237,7 +237,7 @@ public class NewsTest extends WithApplication {
                     .uri("/rejectNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_reject);
             Result resul_reject = route(app, request_reject);
@@ -264,7 +264,7 @@ public class NewsTest extends WithApplication {
                     .uri("/updateNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_update);
             Result result_update = route(app, request_update);
@@ -280,7 +280,7 @@ public class NewsTest extends WithApplication {
                     .uri("/submitNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_submit_again);
             Result resul_submit_again = route(app, request_submit_again);
@@ -296,7 +296,7 @@ public class NewsTest extends WithApplication {
                     .uri("/approvalNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_approval);
             Result resul_approval = route(app, request_approval);
@@ -312,7 +312,7 @@ public class NewsTest extends WithApplication {
                     .uri("/publishNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_publish);
             Result resul_publish = route(app, request_publish);
@@ -341,7 +341,7 @@ public class NewsTest extends WithApplication {
                 .uri("/addNew")  // Specify the relative path here
                 .header("Content-Type", "application/json")
                 .session("userId", "1")
-                .session("roleId", "1")
+                .session("roleId", "4")
                 .session("username", "Admin")
                 .bodyJson(reqBodyWS);
         Result result = route(app, request);
@@ -358,7 +358,7 @@ public class NewsTest extends WithApplication {
                     .uri("/deleteNew")  // Specify the relative path here
                     .header("Content-Type", "application/json")
                     .session("userId", "1")
-                    .session("roleId", "1")
+                    .session("roleId", "4")
                     .session("username", "Admin")
                     .bodyJson(reqBodyWS_submit);
             Result resul_submit = route(app, request_submit);
