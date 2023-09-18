@@ -7,10 +7,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:21
+// @LINE:19
 package controllers.security.javascript {
 
-  // @LINE:21
+  // @LINE:19
   class ReverseUsersControllers(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -18,7 +18,7 @@ package controllers.security.javascript {
     }
 
   
-    // @LINE:22
+    // @LINE:20
     def updateUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.UsersControllers.updateUser",
       """
@@ -28,7 +28,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:21
+    // @LINE:19
     def addUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.UsersControllers.addUser",
       """
@@ -38,7 +38,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:24
+    // @LINE:22
     def getUsers: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.UsersControllers.getUsers",
       """
@@ -48,7 +48,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:23
+    // @LINE:21
     def deleteUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.UsersControllers.deleteUser",
       """
@@ -58,7 +58,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:26
+    // @LINE:24
     def logout: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.UsersControllers.logout",
       """
@@ -68,7 +68,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:25
+    // @LINE:23
     def login: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.UsersControllers.login",
       """
@@ -80,7 +80,7 @@ package controllers.security.javascript {
   
   }
 
-  // @LINE:29
+  // @LINE:27
   class ReverseRolesController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -88,7 +88,7 @@ package controllers.security.javascript {
     }
 
   
-    // @LINE:30
+    // @LINE:28
     def updateRole: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.RolesController.updateRole",
       """
@@ -98,7 +98,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:29
+    // @LINE:27
     def addRole: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.RolesController.addRole",
       """
@@ -108,7 +108,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:31
+    // @LINE:29
     def deleteRole: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.RolesController.deleteRole",
       """
@@ -118,7 +118,7 @@ package controllers.security.javascript {
       """
     )
   
-    // @LINE:32
+    // @LINE:30
     def getRoles: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.security.RolesController.getRoles",
       """

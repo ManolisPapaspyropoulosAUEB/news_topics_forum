@@ -223,9 +223,35 @@ extends Application {
         }
     }
 
+
+    /**
+     *
+     * Οι ειδήσεις θα πρέπει να εμφανίζονται σε φθίνουσα ταξινομημένη
+     * σειρά ως προς την κατάσταση και ημερομηνία δημοσίευσής ή
+     * δημιουργίας τους (ανάλογα αν η πρώτη είναι διαθέσιμη ή όχι).
+     * Οι τιμές κατάστασης σε φθίνουσα σειρά είναι: δημιουργημένη,
+     * υποβεβλημένη, εγκεκριμένη και δημοσιευμένη
+     *
+     * select * from news n
+     * order by
+     * (CASE
+     * WHEN status='Δημιουργημένη' THEN 4
+     * WHEN status='Υποβεβλημένη' THEN 3
+     * WHEN status='Εγκεκριμένη' THEN 2
+     * ELSE 1 END) desc ,
+     * (CASE
+     * WHEN publish_date is not null THEN publish_date
+     * ELSE creation_date
+     * END) desc ;
+     *
+     * */
+
     @SuppressWarnings({"Duplicates", "unchecked"})
     public Result getNews(final Http.Request request) throws ExecutionException, InterruptedException {
+        String userId = request.session().get("userId").orElse(null);
+        String roleId = request.session().get("roleId").orElse(null);
         JsonNode json = request.body().asJson();
+
         if (json == null) {
             return badRequest("Expecting Json data");
         } else {
@@ -233,13 +259,18 @@ extends Application {
             ObjectMapper ow = new ObjectMapper();
             HashMap<String, Object> returnList = new HashMap<String, Object>();
             String jsonResult = "";
-            CompletableFuture<HashMap<String, Object>> getFuture = CompletableFuture.supplyAsync(() -> {
+            CompletableFuture<HashMap<String, Object>> getFuture = CompletableFuture.supplyAsync(() -> {//content
                         return jpaApi.withTransaction(
                                 entityManager -> {
                                     String orderCol = json.findPath("orderCol").asText();
                                     String descAsc = json.findPath("descAsc").asText();
                                     String id = json.findPath("id").asText();
+                                    String coreSubjectId = json.findPath("coreSubjectId").asText();
+                                    String coreSubjectTitle = json.findPath("coreSubjectTitle").asText();
+                                    String fromDate = json.findPath("fromDate").asText();
+                                    String toDate = json.findPath("toDate").asText();
                                     String title = json.findPath("title").asText();
+                                    String content = json.findPath("content").asText();
                                     String status = json.findPath("status").asText();
                                     String start = json.findPath("start").asText();
                                     String limit = json.findPath("limit").asText();
@@ -248,20 +279,54 @@ extends Application {
                                     if (!status.equalsIgnoreCase("") && status != null) {
                                         sqlSub += " and (n.status) ='" + status + "'";
                                     }
+                                    if (!coreSubjectId.equalsIgnoreCase("") && coreSubjectId != null) {
+                                        sqlSub += " and n.id in (select new_id from news_topics where subject_id="+coreSubjectId+")";
+                                    }
+
+                                    if ((!toDate.equalsIgnoreCase("") && toDate != null) && (!fromDate.equalsIgnoreCase("") && fromDate != null)) {
+                                        sqlSub += " and ((SUBSTRING( (CASE WHEN publish_date is not null THEN publish_date ELSE creation_date END), 1, 10)  >= '" + fromDate + "') and ((SUBSTRING( (CASE WHEN publish_date is not null THEN publish_date ELSE creation_date END), 1, 10)  <= '" + toDate + "')) )";
+                                    }
+
+                                    if (!coreSubjectTitle.equalsIgnoreCase("") && coreSubjectTitle != null) {
+                                        sqlSub += " and n.id in (select new_id from news_topics where subject_id in ( select id from core_subjects where title='"+coreSubjectTitle+"'))";
+                                    }
+
                                     if (!id.equalsIgnoreCase("") && id != null) {
                                         sqlSub += " and (n.id) =" + id + "";
                                     }
                                     if (!title.equalsIgnoreCase("") && title != null) {
                                         sqlSub += " and (n.title) like '%" + title + "%'";
                                     }
+                                    if (!content.equalsIgnoreCase("") && content != null) {
+                                        sqlSub += " and (n.content  ) like '%" + content + "%'";
+                                    }
+
+                                    if(Long.valueOf(roleId)== 1L){//episkepths
+                                        sqlSub += " and (n.status) = 'Δημοσιευμένη'";
+                                    }else if (Long.valueOf(roleId)== 2L){//dhmosiografos
+                                        sqlSub += " and ((n.status) = 'Δημοσιευμένη' or (created_by="+userId+"))"; //egkekrimenes + tis dikes tou
+                                    }
+
                                     if (!orderCol.equalsIgnoreCase("") && orderCol != null) {
                                         sqlSub += " order by " + orderCol + " " + descAsc;
                                     } else {
-                                        sqlSub += " order by creation_date desc";
+                                        sqlSub += "order by \n" +
+                                                "(CASE\n" +
+                                                "WHEN status='Δημιουργημένη' THEN 4\n" +
+                                                "WHEN status='Υποβεβλημένη' THEN 3\n" +
+                                                "WHEN status='Εγκεκριμένη' THEN 2\n" +
+                                                "ELSE 1 END) desc ,\n" +
+                                                "(CASE\n" +
+                                                "WHEN publish_date is not null THEN publish_date\n" +
+                                                "ELSE creation_date\n" +
+                                                "END) desc";
                                     }
                                     if (start != null && !start.equalsIgnoreCase("") ) {
                                         sqlSub += " limit " + start + ", " + limit + " ";
                                     }
+
+                                    System.out.println(sqlSub);
+
                                     HashMap<String, Object> returnList_future = new HashMap<String, Object>();
                                     List<HashMap<String, Object>> newsList = new ArrayList<HashMap<String, Object>>();
                                     List<NewsEntity> orgsList
@@ -269,71 +334,7 @@ extends Application {
                                             sqlSub, NewsEntity.class).getResultList();
                                     for (NewsEntity j : orgsList) {
                                         HashMap<String, Object> sHmpam = new HashMap<String, Object>();
-                                        sHmpam.put("id", j.getId());
-                                        sHmpam.put("title", j.getTitle());
-                                        sHmpam.put("content", j.getContent());
-                                        sHmpam.put("status", j.getStatus());
-
-                                        sHmpam.put("createdBy", j.getCreatedBy());
-                                        sHmpam.put("creationDate", j.getCreationDate());
-                                        SecurityUsersEntity createdBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
-                                        sHmpam.put("createdByName", createdBy.getFirstname()+" "+createdBy.getLastname());
-
-                                        sHmpam.put("approvalBy", j.getApprovalBy());
-                                        sHmpam.put("approvalDate", j.getApprovalDate());
-                                        SecurityUsersEntity approvalBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
-                                        sHmpam.put("approvalByName", approvalBy.getFirstname()+" "+approvalBy.getLastname());
-
-
-                                        sHmpam.put("rejectedBy", j.getRejectedBy());
-                                        sHmpam.put("rejectionDate", j.getRejectionDate());
-                                        SecurityUsersEntity rejectedBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
-                                        sHmpam.put("rejectedByName", rejectedBy.getFirstname()+" "+rejectedBy.getLastname());
-                                        sHmpam.put("rejectionReason", j.getRejectionReason());
-
-
-                                        sHmpam.put("submittedBy", j.getSubmittedBy());
-                                        sHmpam.put("submitionDate", j.getSubmitionDate());
-                                        SecurityUsersEntity submittedBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
-                                        sHmpam.put("submittedByName", submittedBy.getFirstname()+" "+submittedBy.getLastname());
-
-
-                                        sHmpam.put("publishBy", j.getPublishBy());
-                                        sHmpam.put("publishDate", j.getPublishDate());
-                                        SecurityUsersEntity publishBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
-                                        sHmpam.put("publishByName", publishBy.getFirstname()+" "+publishBy.getLastname());
-
-
-
-
-
-                                        /***topics****/
-                                        List<HashMap<String, Object>> topicsList = new ArrayList<HashMap<String, Object>>();
-                                        String sqlTopics = "select * from news_topics where new_id="+j.getId();
-                                        List<NewsTopicsEntity> newsTopicsEntityList = entityManager.createNativeQuery(sqlTopics,NewsTopicsEntity.class).getResultList();
-                                        for(NewsTopicsEntity topic : newsTopicsEntityList){
-                                            HashMap<String, Object> topicmap = new HashMap<String, Object>();
-                                            topicmap.put("id", topic.getId());
-                                            topicmap.put("topicId", topic.getSubjectId());
-                                            CoreSubjectsEntity subjectsEntity = entityManager.find(CoreSubjectsEntity.class,topic.getSubjectId());
-                                            topicmap.put("title", subjectsEntity.getTitle());
-                                            topicsList.add(topicmap);
-                                        }
-                                        sHmpam.put("topics", topicsList);
-
-                                        /**approval comments**/
-                                        List<HashMap<String, Object>> commentsList = new ArrayList<HashMap<String, Object>>();
-                                        String sqlcomments = "select * from news_comments comm where status='Εγκεκριμένο' ";
-                                        List<NewsCommentsEntity> newsCommentsEntityList
-                                                = (List<NewsCommentsEntity>) entityManager.createNativeQuery(
-                                                sqlcomments, NewsCommentsEntity.class).getResultList();
-                                        for(NewsCommentsEntity commentsEntity : newsCommentsEntityList){
-                                            HashMap<String, Object> cmap = new HashMap<String, Object>();
-                                            cmap=commentsEntity.gatCommentObject(commentsEntity,entityManager);
-                                            commentsList.add(cmap);
-                                        }
-                                        sHmpam.put("comments", commentsList);
-
+                                        sHmpam = j.getNewsHashmap(j,entityManager , roleId, userId);
                                         newsList.add(sHmpam);
                                     }
                                     returnList_future.put("data", newsList);
@@ -357,6 +358,9 @@ extends Application {
             return ok(jsonResult);
         }
     }
+
+
+
 
     @SuppressWarnings({"Duplicates", "unchecked"})
     @BodyParser.Of(BodyParser.Json.class)

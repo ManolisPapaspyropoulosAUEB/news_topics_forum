@@ -7,10 +7,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:43
+// @LINE:41
 package controllers.news.javascript {
 
-  // @LINE:43
+  // @LINE:41
   class ReverseNewsController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -18,7 +18,7 @@ package controllers.news.javascript {
     }
 
   
-    // @LINE:46
+    // @LINE:44
     def deleteNew: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsController.deleteNew",
       """
@@ -28,7 +28,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:45
+    // @LINE:43
     def getNews: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsController.getNews",
       """
@@ -38,7 +38,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:47
+    // @LINE:45
     def submitNew: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsController.submitNew",
       """
@@ -48,7 +48,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:50
+    // @LINE:48
     def publishNew: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsController.publishNew",
       """
@@ -58,7 +58,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:43
+    // @LINE:41
     def addNew: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsController.addNew",
       """
@@ -68,7 +68,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:49
+    // @LINE:47
     def approvalNew: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsController.approvalNew",
       """
@@ -78,7 +78,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:44
+    // @LINE:42
     def updateNew: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsController.updateNew",
       """
@@ -88,7 +88,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:48
+    // @LINE:46
     def rejectNew: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsController.rejectNew",
       """
@@ -100,7 +100,7 @@ package controllers.news.javascript {
   
   }
 
-  // @LINE:54
+  // @LINE:51
   class ReverseNewsCommentsController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -108,7 +108,7 @@ package controllers.news.javascript {
     }
 
   
-    // @LINE:58
+    // @LINE:55
     def getNewComments: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsCommentsController.getNewComments",
       """
@@ -118,7 +118,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:55
+    // @LINE:52
     def updateNewComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsCommentsController.updateNewComment",
       """
@@ -128,7 +128,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:57
+    // @LINE:54
     def approveNewComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsCommentsController.approveNewComment",
       """
@@ -138,7 +138,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:59
+    // @LINE:56
     def deleteNewComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsCommentsController.deleteNewComment",
       """
@@ -148,7 +148,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:54
+    // @LINE:51
     def addNewComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsCommentsController.addNewComment",
       """
@@ -158,7 +158,7 @@ package controllers.news.javascript {
       """
     )
   
-    // @LINE:56
+    // @LINE:53
     def rejectNewComment: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.news.NewsCommentsController.rejectNewComment",
       """

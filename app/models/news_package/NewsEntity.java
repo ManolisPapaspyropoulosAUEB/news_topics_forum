@@ -1,8 +1,10 @@
 package models.news_package;
 
+import models.core_data.CoreSubjectsEntity;
+import models.security.SecurityUsersEntity;
+
 import javax.persistence.*;
-import java.util.Date;
-import java.util.Objects;
+import java.util.*;
 
 @Entity
 @Table(name = "news", schema = "assigment_forum", catalog = "")
@@ -209,4 +211,91 @@ public class NewsEntity {
     public void setPublishBy(Long publishBy) {
         this.publishBy = publishBy;
     }
+
+
+
+
+    @SuppressWarnings({"Duplicates", "unchecked"})
+    public HashMap<String, Object> getNewsHashmap(NewsEntity j , EntityManager entityManager ,String roleId, String userId){
+        HashMap<String, Object> sHmpam = new HashMap<String, Object>();
+
+        sHmpam.put("id", j.getId());
+        sHmpam.put("title", j.getTitle());
+        sHmpam.put("content", j.getContent());
+        sHmpam.put("status", j.getStatus());
+
+        sHmpam.put("createdBy", j.getCreatedBy());
+        sHmpam.put("creationDate", j.getCreationDate());
+        SecurityUsersEntity createdBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
+        sHmpam.put("createdByName", createdBy.getFirstname()+" "+createdBy.getLastname());
+
+        sHmpam.put("approvalBy", j.getApprovalBy());
+        sHmpam.put("approvalDate", j.getApprovalDate());
+        SecurityUsersEntity approvalBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
+        sHmpam.put("approvalByName", approvalBy.getFirstname()+" "+approvalBy.getLastname());
+
+
+        sHmpam.put("rejectedBy", j.getRejectedBy());
+        sHmpam.put("rejectionDate", j.getRejectionDate());
+        SecurityUsersEntity rejectedBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
+        sHmpam.put("rejectedByName", rejectedBy.getFirstname()+" "+rejectedBy.getLastname());
+        sHmpam.put("rejectionReason", j.getRejectionReason());
+
+
+        sHmpam.put("submittedBy", j.getSubmittedBy());
+        sHmpam.put("submitionDate", j.getSubmitionDate());
+        SecurityUsersEntity submittedBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
+        sHmpam.put("submittedByName", submittedBy.getFirstname()+" "+submittedBy.getLastname());
+
+
+        sHmpam.put("publishBy", j.getPublishBy());
+        sHmpam.put("publishDate", j.getPublishDate());
+        SecurityUsersEntity publishBy = entityManager.find(SecurityUsersEntity.class,j.getCreatedBy());
+        sHmpam.put("publishByName", publishBy.getFirstname()+" "+publishBy.getLastname());
+
+
+
+
+
+        /***topics****/
+        List<HashMap<String, Object>> topicsList = new ArrayList<HashMap<String, Object>>();
+        String sqlTopics = "select * from news_topics where new_id="+j.getId();
+        List<NewsTopicsEntity> newsTopicsEntityList = entityManager.createNativeQuery(sqlTopics,NewsTopicsEntity.class).getResultList();
+        for(NewsTopicsEntity topic : newsTopicsEntityList){
+            HashMap<String, Object> topicmap = new HashMap<String, Object>();
+            topicmap.put("id", topic.getId());
+            topicmap.put("topicId", topic.getSubjectId());
+            CoreSubjectsEntity subjectsEntity = entityManager.find(CoreSubjectsEntity.class,topic.getSubjectId());
+            topicmap.put("title", subjectsEntity.getTitle());
+            topicsList.add(topicmap);
+        }
+        sHmpam.put("topics", topicsList);
+
+        /**approval comments**/
+        List<HashMap<String, Object>> commentsList = new ArrayList<HashMap<String, Object>>();
+        String sqlcomments = "select * from news_comments comm where 1=1 and news_id= "+j.getId();
+
+        if(Long.valueOf(roleId)== 1L){//episkepths
+            sqlcomments += " and (comm.status) = 'Εγκεκριμένο'";
+        }else if (Long.valueOf(roleId)== 2L){//dhmosiografos
+            sqlcomments += " and ((comm.status) = 'Εγκεκριμένο' or (created_by="+userId+" and comm.news_id="+j.getId()+" ))"; //egkekrimenes + tis dikes tou
+        }
+
+        List<NewsCommentsEntity> newsCommentsEntityList
+                = (List<NewsCommentsEntity>) entityManager.createNativeQuery(
+                sqlcomments, NewsCommentsEntity.class).getResultList();
+        for(NewsCommentsEntity commentsEntity : newsCommentsEntityList){
+            HashMap<String, Object> cmap = new HashMap<String, Object>();
+            cmap=commentsEntity.gatCommentObject(commentsEntity,entityManager);
+            commentsList.add(cmap);
+        }
+        sHmpam.put("comments", commentsList);
+
+        return sHmpam;
+    }
+
+
+
+
+
 }

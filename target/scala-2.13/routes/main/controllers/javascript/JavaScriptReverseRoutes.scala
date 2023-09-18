@@ -7,10 +7,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:10
+// @LINE:8
 package controllers.javascript {
 
-  // @LINE:16
+  // @LINE:14
   class ReverseWebAppAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -18,7 +18,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:16
+    // @LINE:14
     def at: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.WebAppAssets.at",
       """
@@ -30,7 +30,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:13
+  // @LINE:11
   class ReverseHomeController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -38,7 +38,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:13
+    // @LINE:11
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
@@ -50,7 +50,7 @@ package controllers.javascript {
   
   }
 
-  // @LINE:10
+  // @LINE:8
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -58,7 +58,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:10
+    // @LINE:8
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """

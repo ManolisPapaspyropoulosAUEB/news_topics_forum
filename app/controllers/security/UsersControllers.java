@@ -329,7 +329,7 @@ public class UsersControllers extends Application {
                                             sqlusers += " and u.USERNAME like '%" + username + "%'";
                                         }
                                         if (!userId.equalsIgnoreCase("") && userId != null) {
-                                            sqlusers += " and u.user_id =" + userId + "'";
+                                            sqlusers += " and u.user_id =" + userId + "";
                                         }
                                         if (!id.equalsIgnoreCase("") && id != null) {
                                             sqlusers += " and u.user_id =" + id;
@@ -343,8 +343,6 @@ public class UsersControllers extends Application {
                                             sqlusers += " and SUBSTR((u.UPDATE_DATE), 1, 10) = '" + updateDate.toUpperCase() + "'";
                                         }
 
-                                        String totalS = "SELECT COUNT(*)  " + sqlusers.substring(8, sqlusers.length());
-                                        BigInteger total = (BigInteger) entityManager.createNativeQuery( totalS).getSingleResult();
 
                                         sqlusers += " order by creation_date desc";
 
@@ -353,6 +351,10 @@ public class UsersControllers extends Application {
                                         }
                                         HashMap<String, Object> returnList_future = new HashMap<String, Object>();
                                         List<HashMap<String, Object>> ufinalList = new ArrayList<HashMap<String, Object>>();
+
+
+                                        System.out.println(sqlusers);
+
                                         List<SecurityUsersEntity> uList = (List<SecurityUsersEntity>) entityManager.createNativeQuery(sqlusers, SecurityUsersEntity.class).getResultList();
                                         for (SecurityUsersEntity j : uList) {
                                             HashMap<String, Object> sHmpam = new HashMap<String, Object>();
@@ -377,7 +379,6 @@ public class UsersControllers extends Application {
                                             ufinalList.add(sHmpam);
                                         }
                                         returnList_future.put("data", ufinalList);
-                                        returnList_future.put("total",total);
                                         returnList_future.put("status", "success");
                                         returnList_future.put("message", "success");
                                         return returnList_future;

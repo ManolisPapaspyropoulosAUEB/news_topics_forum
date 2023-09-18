@@ -7,10 +7,10 @@ import play.api.routing.JavaScriptReverseRoute
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:35
+// @LINE:33
 package controllers.coreData.javascript {
 
-  // @LINE:35
+  // @LINE:33
   class ReverseCoreSubjectsController(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -18,7 +18,7 @@ package controllers.coreData.javascript {
     }
 
   
-    // @LINE:36
+    // @LINE:34
     def updateCoreSubject: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.coreData.CoreSubjectsController.updateCoreSubject",
       """
@@ -28,7 +28,7 @@ package controllers.coreData.javascript {
       """
     )
   
-    // @LINE:39
+    // @LINE:37
     def getCoreSubjects: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.coreData.CoreSubjectsController.getCoreSubjects",
       """
@@ -38,7 +38,7 @@ package controllers.coreData.javascript {
       """
     )
   
-    // @LINE:40
+    // @LINE:38
     def rejectCoreSubject: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.coreData.CoreSubjectsController.rejectCoreSubject",
       """
@@ -48,7 +48,7 @@ package controllers.coreData.javascript {
       """
     )
   
-    // @LINE:38
+    // @LINE:36
     def deleteCoreSubject: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.coreData.CoreSubjectsController.deleteCoreSubject",
       """
@@ -58,7 +58,7 @@ package controllers.coreData.javascript {
       """
     )
   
-    // @LINE:35
+    // @LINE:33
     def addCoreSubject: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.coreData.CoreSubjectsController.addCoreSubject",
       """
@@ -68,7 +68,7 @@ package controllers.coreData.javascript {
       """
     )
   
-    // @LINE:37
+    // @LINE:35
     def approveCoreSubject: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.coreData.CoreSubjectsController.approveCoreSubject",
       """

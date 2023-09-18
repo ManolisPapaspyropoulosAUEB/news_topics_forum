@@ -284,6 +284,9 @@ public class CoreSubjectsController extends Application {
 
     @SuppressWarnings({"Duplicates", "unchecked"})
     public Result getCoreSubjects(final Http.Request request) throws ExecutionException, InterruptedException {
+        String userId = request.session().get("userId").orElse(null);
+        String roleId = request.session().get("roleId").orElse(null);
+
         JsonNode json = request.body().asJson();
         if (json == null) {
             return badRequest("Expecting Json data");
@@ -313,6 +316,13 @@ public class CoreSubjectsController extends Application {
                                     } else {
                                         sqlSub += " order by creation_date desc";
                                     }
+
+                                    if(Long.valueOf(roleId)== 1L){//episkepths
+                                        sqlSub += " and (sub.status) = 'Εγκεκριμένο'";
+                                    }else if (Long.valueOf(roleId)== 2L){//dhmosiografos
+                                        sqlSub += " and ((sub.status) = 'Εγκεκριμένο' or (created_by="+userId+"))"; //egkekrimenes + tis dikes tou
+                                    }
+
                                     if (start != null && !start.equalsIgnoreCase("") ) {
                                         sqlSub += " limit " + start + ", " + limit + " ";
                                     }

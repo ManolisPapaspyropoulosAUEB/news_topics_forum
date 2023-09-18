@@ -306,6 +306,9 @@ public class NewsCommentsController extends Application {
 
     @SuppressWarnings({"Duplicates", "unchecked"})
     public Result getNewComments(final Http.Request request) throws ExecutionException, InterruptedException {
+        String userId = request.session().get("userId").orElse(null);
+        String roleId = request.session().get("roleId").orElse(null);
+
         JsonNode json = request.body().asJson();
         if (json == null) {
             return badRequest("Expecting Json data");
@@ -342,6 +345,13 @@ public class NewsCommentsController extends Application {
                                     } else {
                                         sqlcomments += " order by creation_date desc";
                                     }
+
+                                    if(Long.valueOf(roleId)== 1L){//episkepths
+                                        sqlcomments += " and (comm.status) = 'Εγκεκριμένο'";
+                                    }else if (Long.valueOf(roleId)== 2L){//dhmosiografos
+                                        sqlcomments += " and ((comm.status) = 'Εγκεκριμένο' or (created_by="+userId+"))"; //egkekrimenes + tis dikes tou
+                                    }
+
                                     if (start != null && !start.equalsIgnoreCase("") ) {
                                         sqlcomments += " limit " + start + ", " + limit + " ";
                                     }

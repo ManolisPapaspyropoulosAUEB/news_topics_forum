@@ -1,6 +1,6 @@
-[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\application.conf,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\application.conf)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\logback.xml,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\logback.xml)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\routes,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\routes)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\systemSettings.properties,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\systemSettings.properties)[0m
-[0m[[0m[0mdebug[0m] [0m[0m	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\META-INF\persistence.xml,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\META-INF\persistence.xml)[0m
+[debug] Copy resource mappings: 
+[debug] 	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\application.conf,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\application.conf)
+[debug] 	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\logback.xml,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\logback.xml)
+[debug] 	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\routes,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\routes)
+[debug] 	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\systemSettings.properties,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\systemSettings.properties)
+[debug] 	(E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\conf\META-INF\persistence.xml,E:\development\ergasia_Phorum(INTSTAPEN)\java play 2.8\target\scala-2.13\classes\META-INF\persistence.xml)

@@ -7,59 +7,59 @@ import play.api.mvc.Call
 import _root_.controllers.Assets.Asset
 import _root_.play.libs.F
 
-// @LINE:43
+// @LINE:41
 package controllers.news {
 
-  // @LINE:43
+  // @LINE:41
   class ReverseNewsController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:46
+    // @LINE:44
     def deleteNew(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "deleteNew")
     }
   
-    // @LINE:45
+    // @LINE:43
     def getNews(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "getNews")
     }
   
-    // @LINE:47
+    // @LINE:45
     def submitNew(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "submitNew")
     }
   
-    // @LINE:50
+    // @LINE:48
     def publishNew(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "publishNew")
     }
   
-    // @LINE:43
+    // @LINE:41
     def addNew(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "addNew")
     }
   
-    // @LINE:49
+    // @LINE:47
     def approvalNew(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "approvalNew")
     }
   
-    // @LINE:44
+    // @LINE:42
     def updateNew(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "updateNew")
     }
   
-    // @LINE:48
+    // @LINE:46
     def rejectNew(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "rejectNew")
@@ -67,44 +67,44 @@ package controllers.news {
   
   }
 
-  // @LINE:54
+  // @LINE:51
   class ReverseNewsCommentsController(_prefix: => String) {
     def _defaultPrefix: String = {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
   
-    // @LINE:58
+    // @LINE:55
     def getNewComments(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "getNewComments")
     }
   
-    // @LINE:55
+    // @LINE:52
     def updateNewComment(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "updateNewComment")
     }
   
-    // @LINE:57
+    // @LINE:54
     def approveNewComment(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "approveNewComment")
     }
   
-    // @LINE:59
+    // @LINE:56
     def deleteNewComment(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "deleteNewComment")
     }
   
-    // @LINE:54
+    // @LINE:51
     def addNewComment(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "addNewComment")
     }
   
-    // @LINE:56
+    // @LINE:53
     def rejectNewComment(): Call = {
       
       Call("POST", _prefix + { _defaultPrefix } + "rejectNewComment")

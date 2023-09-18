@@ -13,42 +13,42 @@ import _root_.play.libs.F
 
 class Routes(
   override val errorHandler: play.api.http.HttpErrorHandler, 
-  // @LINE:10
+  // @LINE:8
   Assets_6: controllers.Assets,
-  // @LINE:13
+  // @LINE:11
   HomeController_7: controllers.HomeController,
-  // @LINE:16
+  // @LINE:14
   WebAppAssets_5: controllers.WebAppAssets,
-  // @LINE:21
+  // @LINE:19
   UsersControllers_4: controllers.security.UsersControllers,
-  // @LINE:29
+  // @LINE:27
   RolesController_2: controllers.security.RolesController,
-  // @LINE:35
+  // @LINE:33
   CoreSubjectsController_1: controllers.coreData.CoreSubjectsController,
-  // @LINE:43
+  // @LINE:41
   NewsController_0: controllers.news.NewsController,
-  // @LINE:54
+  // @LINE:51
   NewsCommentsController_3: controllers.news.NewsCommentsController,
   val prefix: String
 ) extends GeneratedRouter {
 
    @javax.inject.Inject()
    def this(errorHandler: play.api.http.HttpErrorHandler,
-    // @LINE:10
+    // @LINE:8
     Assets_6: controllers.Assets,
-    // @LINE:13
+    // @LINE:11
     HomeController_7: controllers.HomeController,
-    // @LINE:16
+    // @LINE:14
     WebAppAssets_5: controllers.WebAppAssets,
-    // @LINE:21
+    // @LINE:19
     UsersControllers_4: controllers.security.UsersControllers,
-    // @LINE:29
+    // @LINE:27
     RolesController_2: controllers.security.RolesController,
-    // @LINE:35
+    // @LINE:33
     CoreSubjectsController_1: controllers.coreData.CoreSubjectsController,
-    // @LINE:43
+    // @LINE:41
     NewsController_0: controllers.news.NewsController,
-    // @LINE:54
+    // @LINE:51
     NewsCommentsController_3: controllers.news.NewsCommentsController
   ) = this(errorHandler, Assets_6, HomeController_7, WebAppAssets_5, UsersControllers_4, RolesController_2, CoreSubjectsController_1, NewsController_0, NewsCommentsController_3, "/")
 
@@ -104,7 +104,7 @@ class Routes(
   }}
 
 
-  // @LINE:10
+  // @LINE:8
   private[this] lazy val controllers_Assets_versioned0_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -122,7 +122,7 @@ class Routes(
     )
   )
 
-  // @LINE:13
+  // @LINE:11
   private[this] lazy val controllers_HomeController_index1_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix)))
   )
@@ -142,7 +142,7 @@ class Routes(
     )
   )
 
-  // @LINE:15
+  // @LINE:13
   private[this] lazy val controllers_Assets_versioned2_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("assets/"), DynamicPart("file", """.+""",false)))
   )
@@ -160,7 +160,7 @@ class Routes(
     )
   )
 
-  // @LINE:16
+  // @LINE:14
   private[this] lazy val controllers_WebAppAssets_at3_route = Route("GET",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("app/"), DynamicPart("file", """.+""",false)))
   )
@@ -178,7 +178,7 @@ class Routes(
     )
   )
 
-  // @LINE:21
+  // @LINE:19
   private[this] lazy val controllers_security_UsersControllers_addUser4_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addUser")))
   )
@@ -198,7 +198,7 @@ class Routes(
     )
   )
 
-  // @LINE:22
+  // @LINE:20
   private[this] lazy val controllers_security_UsersControllers_updateUser5_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateUser")))
   )
@@ -218,7 +218,7 @@ class Routes(
     )
   )
 
-  // @LINE:23
+  // @LINE:21
   private[this] lazy val controllers_security_UsersControllers_deleteUser6_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deleteUser")))
   )
@@ -238,7 +238,7 @@ class Routes(
     )
   )
 
-  // @LINE:24
+  // @LINE:22
   private[this] lazy val controllers_security_UsersControllers_getUsers7_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("getUsers")))
   )
@@ -258,7 +258,7 @@ class Routes(
     )
   )
 
-  // @LINE:25
+  // @LINE:23
   private[this] lazy val controllers_security_UsersControllers_login8_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("login")))
   )
@@ -278,7 +278,7 @@ class Routes(
     )
   )
 
-  // @LINE:26
+  // @LINE:24
   private[this] lazy val controllers_security_UsersControllers_logout9_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("logout")))
   )
@@ -298,7 +298,7 @@ class Routes(
     )
   )
 
-  // @LINE:29
+  // @LINE:27
   private[this] lazy val controllers_security_RolesController_addRole10_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addRole")))
   )
@@ -318,7 +318,7 @@ class Routes(
     )
   )
 
-  // @LINE:30
+  // @LINE:28
   private[this] lazy val controllers_security_RolesController_updateRole11_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateRole")))
   )
@@ -338,7 +338,7 @@ class Routes(
     )
   )
 
-  // @LINE:31
+  // @LINE:29
   private[this] lazy val controllers_security_RolesController_deleteRole12_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deleteRole")))
   )
@@ -358,7 +358,7 @@ class Routes(
     )
   )
 
-  // @LINE:32
+  // @LINE:30
   private[this] lazy val controllers_security_RolesController_getRoles13_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("getRoles")))
   )
@@ -378,7 +378,7 @@ class Routes(
     )
   )
 
-  // @LINE:35
+  // @LINE:33
   private[this] lazy val controllers_coreData_CoreSubjectsController_addCoreSubject14_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addCoreSubject")))
   )
@@ -398,7 +398,7 @@ class Routes(
     )
   )
 
-  // @LINE:36
+  // @LINE:34
   private[this] lazy val controllers_coreData_CoreSubjectsController_updateCoreSubject15_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateCoreSubject")))
   )
@@ -418,7 +418,7 @@ class Routes(
     )
   )
 
-  // @LINE:37
+  // @LINE:35
   private[this] lazy val controllers_coreData_CoreSubjectsController_approveCoreSubject16_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("approveCoreSubject")))
   )
@@ -438,7 +438,7 @@ class Routes(
     )
   )
 
-  // @LINE:38
+  // @LINE:36
   private[this] lazy val controllers_coreData_CoreSubjectsController_deleteCoreSubject17_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deleteCoreSubject")))
   )
@@ -458,7 +458,7 @@ class Routes(
     )
   )
 
-  // @LINE:39
+  // @LINE:37
   private[this] lazy val controllers_coreData_CoreSubjectsController_getCoreSubjects18_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("getCoreSubjects")))
   )
@@ -478,7 +478,7 @@ class Routes(
     )
   )
 
-  // @LINE:40
+  // @LINE:38
   private[this] lazy val controllers_coreData_CoreSubjectsController_rejectCoreSubject19_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("rejectCoreSubject")))
   )
@@ -498,7 +498,7 @@ class Routes(
     )
   )
 
-  // @LINE:43
+  // @LINE:41
   private[this] lazy val controllers_news_NewsController_addNew20_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addNew")))
   )
@@ -518,7 +518,7 @@ class Routes(
     )
   )
 
-  // @LINE:44
+  // @LINE:42
   private[this] lazy val controllers_news_NewsController_updateNew21_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateNew")))
   )
@@ -538,7 +538,7 @@ class Routes(
     )
   )
 
-  // @LINE:45
+  // @LINE:43
   private[this] lazy val controllers_news_NewsController_getNews22_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("getNews")))
   )
@@ -558,7 +558,7 @@ class Routes(
     )
   )
 
-  // @LINE:46
+  // @LINE:44
   private[this] lazy val controllers_news_NewsController_deleteNew23_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deleteNew")))
   )
@@ -578,7 +578,7 @@ class Routes(
     )
   )
 
-  // @LINE:47
+  // @LINE:45
   private[this] lazy val controllers_news_NewsController_submitNew24_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("submitNew")))
   )
@@ -598,7 +598,7 @@ class Routes(
     )
   )
 
-  // @LINE:48
+  // @LINE:46
   private[this] lazy val controllers_news_NewsController_rejectNew25_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("rejectNew")))
   )
@@ -618,7 +618,7 @@ class Routes(
     )
   )
 
-  // @LINE:49
+  // @LINE:47
   private[this] lazy val controllers_news_NewsController_approvalNew26_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("approvalNew")))
   )
@@ -638,7 +638,7 @@ class Routes(
     )
   )
 
-  // @LINE:50
+  // @LINE:48
   private[this] lazy val controllers_news_NewsController_publishNew27_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("publishNew")))
   )
@@ -658,7 +658,7 @@ class Routes(
     )
   )
 
-  // @LINE:54
+  // @LINE:51
   private[this] lazy val controllers_news_NewsCommentsController_addNewComment28_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("addNewComment")))
   )
@@ -678,7 +678,7 @@ class Routes(
     )
   )
 
-  // @LINE:55
+  // @LINE:52
   private[this] lazy val controllers_news_NewsCommentsController_updateNewComment29_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("updateNewComment")))
   )
@@ -698,7 +698,7 @@ class Routes(
     )
   )
 
-  // @LINE:56
+  // @LINE:53
   private[this] lazy val controllers_news_NewsCommentsController_rejectNewComment30_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("rejectNewComment")))
   )
@@ -718,7 +718,7 @@ class Routes(
     )
   )
 
-  // @LINE:57
+  // @LINE:54
   private[this] lazy val controllers_news_NewsCommentsController_approveNewComment31_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("approveNewComment")))
   )
@@ -738,7 +738,7 @@ class Routes(
     )
   )
 
-  // @LINE:58
+  // @LINE:55
   private[this] lazy val controllers_news_NewsCommentsController_getNewComments32_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("getNewComments")))
   )
@@ -758,7 +758,7 @@ class Routes(
     )
   )
 
-  // @LINE:59
+  // @LINE:56
   private[this] lazy val controllers_news_NewsCommentsController_deleteNewComment33_route = Route("POST",
     PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("deleteNewComment")))
   )
@@ -781,235 +781,235 @@ class Routes(
 
   def routes: PartialFunction[RequestHeader, Handler] = {
   
-    // @LINE:10
+    // @LINE:8
     case controllers_Assets_versioned0_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
         controllers_Assets_versioned0_invoker.call(Assets_6.versioned(path, file))
       }
   
-    // @LINE:13
+    // @LINE:11
     case controllers_HomeController_index1_route(params@_) =>
       call { 
         controllers_HomeController_index1_invoker.call(
           req => HomeController_7.index(req))
       }
   
-    // @LINE:15
+    // @LINE:13
     case controllers_Assets_versioned2_route(params@_) =>
       call(Param[String]("path", Right("/public")), params.fromPath[Asset]("file", None)) { (path, file) =>
         controllers_Assets_versioned2_invoker.call(Assets_6.versioned(path, file))
       }
   
-    // @LINE:16
+    // @LINE:14
     case controllers_WebAppAssets_at3_route(params@_) =>
       call(Param[String]("path", Right("webapp/")), params.fromPath[String]("file", None)) { (path, file) =>
         controllers_WebAppAssets_at3_invoker.call(WebAppAssets_5.at(path, file))
       }
   
-    // @LINE:21
+    // @LINE:19
     case controllers_security_UsersControllers_addUser4_route(params@_) =>
       call { 
         controllers_security_UsersControllers_addUser4_invoker.call(
           req => UsersControllers_4.addUser(req))
       }
   
-    // @LINE:22
+    // @LINE:20
     case controllers_security_UsersControllers_updateUser5_route(params@_) =>
       call { 
         controllers_security_UsersControllers_updateUser5_invoker.call(
           req => UsersControllers_4.updateUser(req))
       }
   
-    // @LINE:23
+    // @LINE:21
     case controllers_security_UsersControllers_deleteUser6_route(params@_) =>
       call { 
         controllers_security_UsersControllers_deleteUser6_invoker.call(
           req => UsersControllers_4.deleteUser(req))
       }
   
-    // @LINE:24
+    // @LINE:22
     case controllers_security_UsersControllers_getUsers7_route(params@_) =>
       call { 
         controllers_security_UsersControllers_getUsers7_invoker.call(
           req => UsersControllers_4.getUsers(req))
       }
   
-    // @LINE:25
+    // @LINE:23
     case controllers_security_UsersControllers_login8_route(params@_) =>
       call { 
         controllers_security_UsersControllers_login8_invoker.call(
           req => UsersControllers_4.login(req))
       }
   
-    // @LINE:26
+    // @LINE:24
     case controllers_security_UsersControllers_logout9_route(params@_) =>
       call { 
         controllers_security_UsersControllers_logout9_invoker.call(
           req => UsersControllers_4.logout(req))
       }
   
-    // @LINE:29
+    // @LINE:27
     case controllers_security_RolesController_addRole10_route(params@_) =>
       call { 
         controllers_security_RolesController_addRole10_invoker.call(
           req => RolesController_2.addRole(req))
       }
   
-    // @LINE:30
+    // @LINE:28
     case controllers_security_RolesController_updateRole11_route(params@_) =>
       call { 
         controllers_security_RolesController_updateRole11_invoker.call(
           req => RolesController_2.updateRole(req))
       }
   
-    // @LINE:31
+    // @LINE:29
     case controllers_security_RolesController_deleteRole12_route(params@_) =>
       call { 
         controllers_security_RolesController_deleteRole12_invoker.call(
           req => RolesController_2.deleteRole(req))
       }
   
-    // @LINE:32
+    // @LINE:30
     case controllers_security_RolesController_getRoles13_route(params@_) =>
       call { 
         controllers_security_RolesController_getRoles13_invoker.call(
           req => RolesController_2.getRoles(req))
       }
   
-    // @LINE:35
+    // @LINE:33
     case controllers_coreData_CoreSubjectsController_addCoreSubject14_route(params@_) =>
       call { 
         controllers_coreData_CoreSubjectsController_addCoreSubject14_invoker.call(
           req => CoreSubjectsController_1.addCoreSubject(req))
       }
   
-    // @LINE:36
+    // @LINE:34
     case controllers_coreData_CoreSubjectsController_updateCoreSubject15_route(params@_) =>
       call { 
         controllers_coreData_CoreSubjectsController_updateCoreSubject15_invoker.call(
           req => CoreSubjectsController_1.updateCoreSubject(req))
       }
   
-    // @LINE:37
+    // @LINE:35
     case controllers_coreData_CoreSubjectsController_approveCoreSubject16_route(params@_) =>
       call { 
         controllers_coreData_CoreSubjectsController_approveCoreSubject16_invoker.call(
           req => CoreSubjectsController_1.approveCoreSubject(req))
       }
   
-    // @LINE:38
+    // @LINE:36
     case controllers_coreData_CoreSubjectsController_deleteCoreSubject17_route(params@_) =>
       call { 
         controllers_coreData_CoreSubjectsController_deleteCoreSubject17_invoker.call(
           req => CoreSubjectsController_1.deleteCoreSubject(req))
       }
   
-    // @LINE:39
+    // @LINE:37
     case controllers_coreData_CoreSubjectsController_getCoreSubjects18_route(params@_) =>
       call { 
         controllers_coreData_CoreSubjectsController_getCoreSubjects18_invoker.call(
           req => CoreSubjectsController_1.getCoreSubjects(req))
       }
   
-    // @LINE:40
+    // @LINE:38
     case controllers_coreData_CoreSubjectsController_rejectCoreSubject19_route(params@_) =>
       call { 
         controllers_coreData_CoreSubjectsController_rejectCoreSubject19_invoker.call(
           req => CoreSubjectsController_1.rejectCoreSubject(req))
       }
   
-    // @LINE:43
+    // @LINE:41
     case controllers_news_NewsController_addNew20_route(params@_) =>
       call { 
         controllers_news_NewsController_addNew20_invoker.call(
           req => NewsController_0.addNew(req))
       }
   
-    // @LINE:44
+    // @LINE:42
     case controllers_news_NewsController_updateNew21_route(params@_) =>
       call { 
         controllers_news_NewsController_updateNew21_invoker.call(
           req => NewsController_0.updateNew(req))
       }
   
-    // @LINE:45
+    // @LINE:43
     case controllers_news_NewsController_getNews22_route(params@_) =>
       call { 
         controllers_news_NewsController_getNews22_invoker.call(
           req => NewsController_0.getNews(req))
       }
   
-    // @LINE:46
+    // @LINE:44
     case controllers_news_NewsController_deleteNew23_route(params@_) =>
       call { 
         controllers_news_NewsController_deleteNew23_invoker.call(
           req => NewsController_0.deleteNew(req))
       }
   
-    // @LINE:47
+    // @LINE:45
     case controllers_news_NewsController_submitNew24_route(params@_) =>
       call { 
         controllers_news_NewsController_submitNew24_invoker.call(
           req => NewsController_0.submitNew(req))
       }
   
-    // @LINE:48
+    // @LINE:46
     case controllers_news_NewsController_rejectNew25_route(params@_) =>
       call { 
         controllers_news_NewsController_rejectNew25_invoker.call(
           req => NewsController_0.rejectNew(req))
       }
   
-    // @LINE:49
+    // @LINE:47
     case controllers_news_NewsController_approvalNew26_route(params@_) =>
       call { 
         controllers_news_NewsController_approvalNew26_invoker.call(
           req => NewsController_0.approvalNew(req))
       }
   
-    // @LINE:50
+    // @LINE:48
     case controllers_news_NewsController_publishNew27_route(params@_) =>
       call { 
         controllers_news_NewsController_publishNew27_invoker.call(
           req => NewsController_0.publishNew(req))
       }
   
-    // @LINE:54
+    // @LINE:51
     case controllers_news_NewsCommentsController_addNewComment28_route(params@_) =>
       call { 
         controllers_news_NewsCommentsController_addNewComment28_invoker.call(
           req => NewsCommentsController_3.addNewComment(req))
       }
   
-    // @LINE:55
+    // @LINE:52
     case controllers_news_NewsCommentsController_updateNewComment29_route(params@_) =>
       call { 
         controllers_news_NewsCommentsController_updateNewComment29_invoker.call(
           req => NewsCommentsController_3.updateNewComment(req))
       }
   
-    // @LINE:56
+    // @LINE:53
     case controllers_news_NewsCommentsController_rejectNewComment30_route(params@_) =>
       call { 
         controllers_news_NewsCommentsController_rejectNewComment30_invoker.call(
           req => NewsCommentsController_3.rejectNewComment(req))
       }
   
-    // @LINE:57
+    // @LINE:54
     case controllers_news_NewsCommentsController_approveNewComment31_route(params@_) =>
       call { 
         controllers_news_NewsCommentsController_approveNewComment31_invoker.call(
           req => NewsCommentsController_3.approveNewComment(req))
       }
   
-    // @LINE:58
+    // @LINE:55
     case controllers_news_NewsCommentsController_getNewComments32_route(params@_) =>
       call { 
         controllers_news_NewsCommentsController_getNewComments32_invoker.call(
           req => NewsCommentsController_3.getNewComments(req))
       }
   
-    // @LINE:59
+    // @LINE:56
     case controllers_news_NewsCommentsController_deleteNewComment33_route(params@_) =>
       call { 
         controllers_news_NewsCommentsController_deleteNewComment33_invoker.call(
